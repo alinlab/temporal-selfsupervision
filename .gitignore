@@ -1,0 +1,7 @@
+__pycache__
+build
+cache
+experiments
+data/*
+!data/.gitkeep
+.DS_Store

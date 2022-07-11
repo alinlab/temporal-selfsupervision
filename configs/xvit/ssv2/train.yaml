@@ -1,0 +1,60 @@
+ERM_TRAIN:
+  ENABLE: True
+  DATASET: Ssv2_webm
+  BATCH_SIZE: 64
+  EVAL_PERIOD: 1
+  CHECKPOINT_PERIOD: 1
+  AUTO_RESUME: True
+  FP16: True
+  FINETUNE: False
+  NUM_ITERS: 1
+DATA:
+  PATH_TO_ANNOTATION: '/data/somethingv2/annotation'
+  PATH_TO_JPEG: '/data/somethingv2/raw_data'
+  TRAIN_SPLIT_DIR: 'train_test'
+  VAL_SPLIT_DIR: 'train_test'
+  MEAN: [ 0.5, 0.5, 0.5 ]
+  STD: [ 0.5, 0.5, 0.5 ]
+  USE_RAND_AUGMENT: True
+  TRAIN_JITTER_SCALES: [ 256, 320 ]
+  TRAIN_CROP_SIZE: 224
+  RANDOM_FLIP: False
+  INV_UNIFORM_SAMPLE: True
+  REVERSE_INPUT_CHANNEL: True
+  NUM_FRAMES: 8
+SOLVER:
+  BASE_LR: 1e-4
+  LR_POLICY: steps_with_relative_lrs
+  LRS: [ 1, 0.1, 0.01 ]
+  STEPS: [ 0, 20, 30 ]
+  MAX_EPOCH: 35
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 5e-2
+  WARMUP_EPOCHS: 0.0
+  SMOOTHING: 0.2
+  OPTIMIZING_METHOD: adamw
+MODEL:
+  NUM_CLASSES: 174
+  MODEL_NAME: xvit_vit_base_patch16_224
+  LOSS_FUNC: cross_entropy
+XVIT:
+  BASE_MODEL: vit_base_patch16_224
+  CONSENSUS_TYPE: 'vit'
+  USE_XVIT: True
+  SHIFT_DIV: 4
+  NUM_SEGMENTS: 8
+  LOCATIONS_LIST: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+  DROPOUT_RATE: 0.5
+DATA_LOADER:
+  NUM_WORKERS: 8
+  PIN_MEMORY: True
+TENSORBOARD:
+  ENABLE: True
+NUM_GPUS: 8
+LOG_PERIOD: 50
+RNG_SEED: 0
+OUTPUT_DIR: ./experiments/xvit_8frame
+ERM_TEST:
+  ENABLE: True
+  DATASET: Ssv2_webm
+  BATCH_SIZE: 128
