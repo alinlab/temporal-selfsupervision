@@ -64,5 +64,19 @@ Our code base is built partly upon the packages:
 ## Citation
 If you use this code for your research, please cite our papers.
 ```
-
+@InProceedings{pmlr-v162-yun22a,
+  title = 	 {Time Is {M}att{E}r: Temporal Self-supervision for Video Transformers},
+  author =       {Yun, Sukmin and Kim, Jaehyung and Han, Dongyoon and Song, Hwanjun and Ha, Jung-Woo and Shin, Jinwoo},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {25804--25816},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/yun22a/yun22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/yun22a.html},
+  abstract = 	 {Understanding temporal dynamics of video is an essential aspect of learning better video representations. Recently, transformer-based architectural designs have been extensively explored for video tasks due to their capability to capture long-term dependency of input sequences. However, we found that these Video Transformers are still biased to learn spatial dynamics rather than temporal ones, and debiasing the spurious correlation is critical for their performance. Based on the observations, we design simple yet effective self-supervised tasks for video models to learn temporal dynamics better. Specifically, for debiasing the spatial bias, our method learns the temporal order of video frames as extra self-supervision and enforces the randomly shuffled frames to have low-confidence outputs. Also, our method learns the temporal flow direction of video tokens among consecutive frames for enhancing the correlation toward temporal dynamics. Under various video action recognition tasks, we demonstrate the effectiveness of our method and its compatibility with state-of-the-art Video Transformers.}
+}
 ```
