@@ -59,7 +59,7 @@ python main.py --cfg configs/xvit/ssv2/train.yaml
 
 ## Acknowledgement
 Our code base is built partly upon the packages: 
-<a href="https://github.com/facebookresearch/SlowFast">SlowFast</a>, <a href=https://github.com/facebookresearch/TimeSformer>TimeSformer</a>, and <a href=https://github.com/rwightman/pytorch-image-models>pytorch-image-models</a> by <a href=https://github.com/rwightman>Ross Wightman</a>.
+<a href="https://github.com/facebookresearch/SlowFast">SlowFast</a>, <a href=https://github.com/facebookresearch/TimeSformer>TimeSformer</a>, <a href=https://github.com/facebookresearch/Motionformer>Motionformer</a>, <a href=https://github.com/1adrianb/video-transformers>X-ViT</a>, and <a href=https://github.com/rwightman/pytorch-image-models>pytorch-image-models</a> by <a href=https://github.com/rwightman>Ross Wightman</a>.
 
 ## Citation
 If you use this code for your research, please cite our papers.
