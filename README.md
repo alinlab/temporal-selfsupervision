@@ -57,6 +57,13 @@ python main.py --cfg configs/motionformer/ssv2/train.yaml
 python main.py --cfg configs/xvit/ssv2/train.yaml
 ```
 
+## License
+The majority of this work is licensed under [CC-NC 4.0 International license](LICENSE). However, portions of the project are available under separate license terms: [SlowFast](https://github.com/facebookresearch/SlowFast), [XViT](https://github.com/1adrianb/video-transformers) and [pytorch-image-models](https://github.com/rwightman/pytorch-image-models) are licensed under the Apache 2.0 license.
+```
+Copyright 2022-present NAVER Corp.
+CC BY-NC-4.0 (https://creativecommons.org/licenses/by-nc/4.0/)
+```
+
 ## Acknowledgement
 Our code base is built partly upon the packages: 
 <a href="https://github.com/facebookresearch/SlowFast">SlowFast</a>, <a href=https://github.com/facebookresearch/TimeSformer>TimeSformer</a>, <a href=https://github.com/facebookresearch/Motionformer>Motionformer</a>, <a href=https://github.com/1adrianb/video-transformers>X-ViT</a>, and <a href=https://github.com/rwightman/pytorch-image-models>pytorch-image-models</a> by <a href=https://github.com/rwightman>Ross Wightman</a>.
