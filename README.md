@@ -1,6 +1,6 @@
 # Time Is MattEr: Temporal Self-supervision for Video Transformers (TIME)
 
-PyTorch implementation for <a href=https://proceedings.mlr.press/v162/yun22a.html>"Time Is MattEr: Temporal Self-supervision for Video Transformers"</a> (accepted in ICML 2022)
+PyTorch implementation for <a href=https://arxiv.org/abs/2207.09067>"Time Is MattEr: Temporal Self-supervision for Video Transformers"</a> (accepted in ICML 2022)
 
 <p align="center">
 <img width="950" alt="thumbnail" src="https://user-images.githubusercontent.com/34064646/178366422-f7db1073-81ef-46c3-889d-eb55046ef7f6.png">
