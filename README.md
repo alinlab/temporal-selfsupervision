@@ -41,18 +41,18 @@ Then, install the following packages:
 ```
 
 
-### Training codes
-# TimeSformer 
+## Training codes
+### TimeSformer 
 ```
 python main.py --cfg configs/timesformer/ssv2/train.yaml
 ```
 
-# Motionformer
+### Motionformer
 ```
 python main.py --cfg configs/motionformer/ssv2/train.yaml
 ```
 
-# X-ViT
+### X-ViT
 ```
 python main.py --cfg configs/xvit/ssv2/train.yaml
 ```
