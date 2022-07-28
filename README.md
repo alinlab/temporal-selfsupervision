@@ -57,6 +57,19 @@ python main.py --cfg configs/motionformer/ssv2/train.yaml
 python main.py --cfg configs/xvit/ssv2/train.yaml
 ```
 
+## Pretrained weights on ImageNet
+You can download the weights of the trained models on Something-Something-V2 (SSv2). All models share the same training details, and they are fine-tuned from the ImageNet-1k pretrained weights.
+
+| backbone  | dataset | # of frames	| spatial crop | acc@1 | acc@5 | url |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| TimeSformer        | SSv2 | 8 | 224 | 62.1 | 86.4 | <a href="https://drive.google.com/file/d/1CPOr9LopYEJbDwTc0B0bJcp0L12FKyrY/view?usp=sharing">model</a> |
+| TimeSformer + TIME | SSv2 | 8 | 224 | 63.7 | 87.8 | <a href="https://drive.google.com/file/d/105ld0h0zUNjqBOW1nJLmRlozTKumCaZH/view?usp=sharing">model</a> |
+| Motionformer        | SSv2 | 8 | 224 | 63.8 | 88.5 | <a href="https://drive.google.com/file/d/1F2tC9WR4Wqt3W4w6JVefRn3SxtmbukpW/view?usp=sharing">model</a> |
+| Motionformer + TIME | SSv2 | 8 | 224 | 64.7 | 89.3 | <a href="https://drive.google.com/file/d/15J9YvNqYdNcDn8b76LHH-BUrJ7GdBxlM/view?usp=sharing">model</a> |
+| X-ViT        | SSv2 | 8 | 224 | 60.1 | 85.2 | <a href="https://drive.google.com/file/d/1GRwhdO0Egmd7oqjkI7WzxLd7srXn2ci1/view?usp=sharing">model</a> |
+| X-ViT + TIME | SSv2 | 8 | 224 | 63.5 | 88.1 | <a href="https://drive.google.com/file/d/1oIvocStaf9bYHKy8PxH-fY8v1aOCXEkn/view?usp=sharing">model</a> |
+
+
 ## License
 The majority of this work is licensed under [CC-NC 4.0 International license](LICENSE). However, portions of the project are available under separate license terms: [SlowFast](https://github.com/facebookresearch/SlowFast), [XViT](https://github.com/1adrianb/video-transformers) and [pytorch-image-models](https://github.com/rwightman/pytorch-image-models) are licensed under the Apache 2.0 license.
 ```
