@@ -57,7 +57,7 @@ python main.py --cfg configs/motionformer/ssv2/train.yaml
 python main.py --cfg configs/xvit/ssv2/train.yaml
 ```
 
-## Pretrained weights on ImageNet
+## Pretrained weights
 You can download the weights of the trained models on Something-Something-V2 (SSv2). All models share the same training details, and they are fine-tuned from the ImageNet-1k pretrained weights.
 
 | backbone  | dataset | # of frames	| spatial crop | acc@1 | acc@5 | url |
